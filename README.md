@@ -415,9 +415,9 @@ A: No. Static build means zero dependencies.
 
 **Q: Can I use it in my own software as a plugin?**  
 A: Absolutely! Use the `-silent` flag for automation:
-```bash`````````````````````````````````
+```bash
 unlocker.exe -f "file" D -silent
-````````````````````````````````````````
+```
 Check the exit code (0 = success, 1 = failure) and read stdout for messages.
 
 **Q: Why does it ask for admin rights?**  
