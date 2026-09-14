@@ -236,8 +236,8 @@ Operations requiring admin rights automatically re-launch the process with UAC e
 | Aspect             |     Detail                           |
 |--------------------|--------------------------------------|
 | **Language**       | C (C89-compatible)                   |
-| **Lines of Code**  | ~1500                                |
-| **Binary Size**    | ~150 KB (static)                     |
+| **Lines of Code**  | 2068                                 |
+| **Binary Size**    | ~145 KB (static)                     |
 | **Dependencies**   | None (uses Windows API only)         |
 | **Minimum Windows**| Windows 7 (Vista should work)        |
 | **Architecture**   | x86_64 (32-bit build possible)       |
