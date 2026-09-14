@@ -316,9 +316,9 @@ The full source code is available here — audit it, build it yourself, and veri
 
 ### Method 2: Command Line
 
-```bash``````````````````````````````````````````````````
+```bash
 "C:\Program Files\UnlockerPro\unlocker.exe" -uninstall
-`````````````````````````````````````````````````````````
+```
 
 ### Method 3: Manual Cleanup
 
