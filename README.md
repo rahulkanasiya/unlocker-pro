@@ -326,6 +326,8 @@ If the above fails:
 
 ```bash ```````````````````````````````````````````````````````````````````````````````
 # Delete registry entries
+```
+
 reg delete "HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\UnlockerPro" /f
 reg delete "HKLM\SOFTWARE\Classes\*\shell\UnlockerPro" /f
 reg delete "HKLM\SOFTWARE\Classes\Directory\shell\UnlockerPro" /f
@@ -333,7 +335,9 @@ reg delete "HKLM\SOFTWARE\Classes\Drive\shell\UnlockerPro" /f
 reg delete "HKLM\SOFTWARE\Classes\Directory\Background\shell\UnlockerPro" /f
 reg delete "HKLM\SOFTWARE\Classes\UnlockerProMenu" /f
 
+```
 # Delete install folder
+
 rmdir /s /q "C:\Program Files\UnlockerPro"
 ````````````````````````````````````````````````````````````````````````````````````````
 
