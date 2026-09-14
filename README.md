@@ -2,7 +2,7 @@
 
 > A powerful Windows utility to unlock, delete, and take control of files that Windows refuses to touch.
 
-[![Version](https://img.shields.io/badge/version-1.0.0-blue.svg)](https://github.com/rahulkanasiya/unlocker-pro/releases)
+[![Version](https://img.shields.io/badge/version-1.0.0-blue.svg)](https://github.com/rahulkanasiya/unlocker-pro/blob/main/unlocker.exe)
 [![Platform](https://img.shields.io/badge/platform-Windows%207%2F8%2F10%2F11-lightgrey.svg)]()
 [![License](https://img.shields.io/badge/license-MIT-green.svg)](LICENSE)
 [![Language](https://img.shields.io/badge/language-C-blue.svg)]()
@@ -271,10 +271,10 @@ Operations requiring admin rights automatically re-launch the process with UAC e
 
 ### Context menu not appearing
 
-```bash````````````````
+```bash
 unlocker.exe -repair
 ie4uinit.exe -show
-```````````````````````
+```
 
 Or restart Windows Explorer from Task Manager.
 
@@ -282,9 +282,9 @@ Or restart Windows Explorer from Task Manager.
 
 Windows caches icons aggressively. Refresh the cache:
 
-```bash``````````````
+```bash
 ie4uinit.exe -show
-`````````````````````
+```
 
 ### File still locked after "Unlock"
 
@@ -324,9 +324,9 @@ The full source code is available here — audit it, build it yourself, and veri
 
 If the above fails:
 
-```bash ```````````````````````````````````````````````````````````````````````````````
+```bash 
 # Delete registry entries
-```
+
 
 reg delete "HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\UnlockerPro" /f
 reg delete "HKLM\SOFTWARE\Classes\*\shell\UnlockerPro" /f
@@ -335,11 +335,11 @@ reg delete "HKLM\SOFTWARE\Classes\Drive\shell\UnlockerPro" /f
 reg delete "HKLM\SOFTWARE\Classes\Directory\Background\shell\UnlockerPro" /f
 reg delete "HKLM\SOFTWARE\Classes\UnlockerProMenu" /f
 
-```
 # Delete install folder
 
 rmdir /s /q "C:\Program Files\UnlockerPro"
-````````````````````````````````````````````````````````````````````````````````````````
+```
+
 
 ---------------------------------------------------------------------------------------
 
@@ -358,7 +358,7 @@ unlocker-pro/                                     ``
 
 ### Building
 
-```bash`````````````````````````````````````````````````````````````````````
+```bash
 # Debug build (with console for testing)
 gcc unlocker.c app.res -o unlocker-debug.exe \
     -lcomctl32 -lshell32 -lole32 -ladvapi32 -lrstrtmgr -luser32 -lgdi32
@@ -367,7 +367,7 @@ gcc unlocker.c app.res -o unlocker-debug.exe \
 gcc unlocker.c app.res -o unlocker.exe \
     -mwindows -static -static-libgcc -O2 \
     -lcomctl32 -lshell32 -lole32 -ladvapi32 -lrstrtmgr -luser32 -lgdi32
-`````````````````````````````````````````````````````````````````````````````
+```
 
 ### Contributing
 
